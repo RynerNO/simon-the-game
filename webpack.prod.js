@@ -8,7 +8,7 @@ module.exports = merge(common, {
   output: {
     chunkFilename: 'chunks/[id].[hash].js',
     filename: 'app.[hash].js',
-    publicPath: '/',
+    publicPath: '/dist/',
     crossOriginLoading: "anonymous",
     path: path.resolve(__dirname, 'dist/')
   },
