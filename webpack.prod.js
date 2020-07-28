@@ -10,7 +10,7 @@ module.exports = merge(common, {
     filename: 'app.[hash].js',
     publicPath: '/',
     crossOriginLoading: "anonymous",
-    path: path.resolve(__dirname, 'dist/public')
+    path: path.resolve(__dirname, 'dist/')
   },
   plugins: [new HtmlWebpackPlugin({
     cache: true,
@@ -28,7 +28,7 @@ module.exports = merge(common, {
     </html>
     `,
     meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
-    output: path.resolve(__dirname, 'dist', 'public'),
+    output: path.resolve(__dirname, 'dist'),
     xhtml: true,
   })],
   module: {
