@@ -12,7 +12,7 @@ module.exports = merge(common, {
     crossOriginLoading: "anonymous",
     path: path.resolve(__dirname, 'dist/public')
   },
-  plugins: [new VueLoaderPlugin(), new HtmlWebpackPlugin({
+  plugins: [new HtmlWebpackPlugin({
     cache: true,
     hash: true,
     title: "Sync Reader",
