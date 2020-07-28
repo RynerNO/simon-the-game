@@ -11,5 +11,6 @@ const routes = [
 
 export default new Router({
   mode: 'history',
+  base: '/simon-the-game/dist/',
   routes
 })
